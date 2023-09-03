@@ -60,8 +60,8 @@ METHOD_RAND = 'random'
 
 JOIN_TIMEOUT = 1.0
 
-DEFAULT_WORKERS = 10
-DEFAULT_SOCKETS = 500
+DEFAULT_WORKERS = 1
+DEFAULT_SOCKETS = 5
 
 GOLDENEYE_BANNER = 'GoldenEye v2.1 by Jan Seidl <jseidl@wroot.org>'
 
@@ -122,7 +122,7 @@ class GoldenEye(object):
     # Options
     nr_workers = DEFAULT_WORKERS
     nr_sockets = DEFAULT_SOCKETS
-    method = METHOD_GET
+    method = METHOD_RAND
 
     def __init__(self, url):
 
@@ -245,7 +245,7 @@ class Striker(Process):
     runnable = True
 
     # Options
-    method = METHOD_GET
+    method = METHOD_RAND
 
     def __init__(self, url, nr_sockets, counter):
 
@@ -586,7 +586,7 @@ def main():
 
         workers = DEFAULT_WORKERS
         socks = DEFAULT_SOCKETS
-        method = METHOD_GET
+        method = METHOD_RAND
 
         uas_file = None
         useragents = []
