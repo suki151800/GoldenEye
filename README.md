@@ -1,4 +1,4 @@
-# THIS PROJECT IS NO LONGER MAINTAINED
+## This Project Replicate From https://github.com/jseidl/GoldenEye
 
 # GoldenEye
 
@@ -15,9 +15,9 @@ Attack Vector exploited: HTTP Keep Alive + NoCache
      OPTIONS:
         Flag           Description                     Default
         -u, --useragents   File with user-agents to use                     (default: randomly generated)
-        -w, --workers      Number of concurrent workers                     (default: 50)
-        -s, --sockets      Number of concurrent sockets                     (default: 30)
-        -m, --method       HTTP Method to use 'get' or 'post'  or 'random'  (default: get)
+        -w, --workers      Number of concurrent workers                     (default: 5)
+        -s, --sockets      Number of concurrent sockets                     (default: 1)
+        -m, --method       HTTP Method to use 'get' or 'post'  or 'random'  (default: random)
         -d, --debug        Enable Debug Mode [more verbose output]          (default: False)
         -n, --nosslcheck   Do not verify SSL Certificate                    (default: True)
         -h, --help         Shows this help
